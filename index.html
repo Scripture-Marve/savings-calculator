@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interest Calculator (All Modes)</title>
+  <link rel="stylesheet" href="savingsstyles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Interest Calculator</h2>
+
+    <label for="amount">Amount to Save (₦)</label>
+    <input type="number" id="amount" placeholder="e.g. 70000">
+
+    <label for="rate">Annual Interest Rate (%)</label>
+    <input type="number" id="rate" placeholder="e.g. 15">
+
+    <label for="isMonthly">Is this a Monthly Savings?</label>
+    <select id="isMonthly">
+      <option value="no">No (One-Time Savings)</option>
+      <option value="yes">Yes (Monthly Savings)</option>
+    </select>
+
+    <button onclick="calculateAll()">Calculate</button>
+
+    <div class="results" id="simpleOneTimeBox"></div>
+    <div class="results" id="compoundOneTimeBox"></div>
+    <div class="results" id="monthlyBox"></div>
+    <div class="results" id="compoundMonthlyBox"></div>
+  </div>
+
+  <script src="savinsscript.js"></script>
+</body>
+</html>
